@@ -6,18 +6,3 @@
  */
 
 rootProject.name = "lock"
-
-dependencyResolutionManagement {
-    repositories {
-        mavenLocal()
-    }
-    versionCatalogs {
-        create("libs") {
-            from("com.example:catalog1:1.0.0")
-        }
-        create("libs2") {
-            from("com.example:catalog2:1.0.0")
-        }
-    }
-    defaultLibrariesExtensionName = "projectLibs"
-}
