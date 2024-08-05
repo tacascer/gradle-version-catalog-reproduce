@@ -6,3 +6,16 @@
  */
 
 rootProject.name = "lock"
+
+dependencyResolutionManagement {
+    repositories {
+        mavenLocal()
+    }
+
+    versionCatalogs {
+        create("libs") {
+            // This version catalog is not included in the lock file.
+            from("com.example:catalog1:latest.release")
+        }
+    }
+}
