@@ -32,7 +32,7 @@ The `catalog1` and `catalog2` projects are two different version catalogs.
 )
 ```
 
-This should create a `settings.lockfile` with only a line for `catalog1`:
+This should create a `lock/settings.lockfile` with only a line for `catalog1`:
 
 ```text
 # This is a Gradle generated file for dependency locking.
@@ -41,3 +41,5 @@ This should create a `settings.lockfile` with only a line for `catalog1`:
 com.example:catalog1:1.0.0=incomingCatalogForLibs0
 empty=
 ```
+
+The expected behavior is that `lock/settings.lockfile` would contain a line for `catalog2`, since that's what `lock/settings.gradle.kts` is using
