@@ -3,7 +3,7 @@ dependencyResolutionManagement {
         mavenLocal()
     }
     versionCatalogs {
-        create("libs") {
+        create("libs3") {
             from("com.example:catalog1:latest.release")
         }
     }

@@ -13,8 +13,11 @@ dependencyResolutionManagement {
     }
 
     versionCatalogs {
-        create("libs") {
+        create("libs1") {
             // This version catalog is not included in the lock file.
+            from("com.example:catalog1:latest.release")
+        }
+        create("libs2") {
             from("com.example:catalog2:latest.release")
         }
     }

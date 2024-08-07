@@ -28,6 +28,7 @@ The `catalog1` and `catalog2` projects are two different version catalogs.
   
 (
     cd lock
+    rm -f settings-gradle.lockfile
     ./gradlew dependencies --write-locks
 )
 ```
