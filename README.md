@@ -22,7 +22,7 @@ The `catalog1` and `catalog2` projects are two different version catalogs.
 )
 
 (
-    cd ../catalog2
+    cd catalog2
     ./gradlew publishToMavenLocal
 )
   
