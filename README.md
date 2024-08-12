@@ -11,7 +11,7 @@ whatever version catalog is specified in the root `settings.gradle.kts`.
 
 The `catalog1` and `catalog2` projects are two different version catalogs.
 
-`lock/buildSrc/settings.gradle.kts` consumes `catalog1` and `lock/settings.gradle.kts` consumes `catalog2`
+`lock/buildSrc/settings.gradle.kts` consumes `catalog1` and `lock/settings.gradle.kts` consumes `catalog1` and `catalog2`
 
 ## Steps to reproduce
 
@@ -39,7 +39,7 @@ This should create a `lock/settings.lockfile` with only a line for `catalog1`:
 # This is a Gradle generated file for dependency locking.
 # Manual edits can break the build and are not advised.
 # This file is expected to be part of source control.
-com.example:catalog1:1.0.0=incomingCatalogForLibs0
+com.example:catalog1:1.0.0=incomingCatalogForLibs30
 empty=
 ```
 
